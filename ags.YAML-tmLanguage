@@ -1,0 +1,12 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: AGS Assembly
+scopeName: source.ags
+fileTypes: ["aea","ags"]
+uuid: ebcb89b7-fbf9-467d-90ec-7ab247800e0c
+
+patterns:
+- comment: Comments
+  name: comment.ags
+  match: #.*
+...
