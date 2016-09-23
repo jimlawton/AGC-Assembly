@@ -55,6 +55,10 @@ patterns:
   name: variable.language.ags_assembly
   match: \b(A|L|Q|EB|FB|Z|BB|ARUPT|LRUPT|QRUPT|ZRUPT|BBRUPT|BRUPT|CYR|SR|CYL|EDOP)\b
 
+- comment: Label
+  name: variable.parameter.agc_assembly
+  match: ^( *[0-9A-Z+-/\*\=\(\)\?\'\.\&\;]+)\b
+
 - comment: Operators
   name: keyword.operator.ags_assembly
   match: \s\+|\-|,\s
