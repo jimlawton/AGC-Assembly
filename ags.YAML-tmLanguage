@@ -20,7 +20,7 @@ patterns:
 - comment: Constants
   name: constant.numeric.ags_assembly
   #match: \b[0-9\-\.]+([EB][0-9\-\+]+)*\b
-  match: \b([0-9\-.EB]+)\b
+  match: \s([0-9\-.EB]+)[\s]
 
 - comment: Directives
   name: keyword.other.ags_assembly

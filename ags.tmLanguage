@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>Constants</string>
 			<key>match</key>
-			<string>\b([0-9\-.EB]+)\b</string>
+			<string>\s([0-9\-.EB]+)[\s]</string>
 			<key>name</key>
 			<string>constant.numeric.ags_assembly</string>
 		</dict>
