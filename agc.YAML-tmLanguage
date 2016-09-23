@@ -1,0 +1,12 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: AGC Assembly
+scopeName: source.agc_assembly
+fileTypes: [agc]
+uuid: fb9fa55a-903a-4291-8e6f-bc8fbfafbe38
+
+patterns:
+- comment: Comments
+  name: comment.agc_assembly
+  match: "#.*"
+...
