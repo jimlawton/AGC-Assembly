@@ -12,11 +12,107 @@
 	<array>
 		<dict>
 			<key>comment</key>
+			<string>Annotation comments</string>
+			<key>match</key>
+			<string>##.*</string>
+			<key>name</key>
+			<string>invalid.deprecated.agc_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Comments</string>
 			<key>match</key>
 			<string>#.*</string>
 			<key>name</key>
-			<string>comment.agc_assembly</string>
+			<string>comment.line.number-sign.agc_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block I Interpreter Opcodes</string>
+			<key>match</key>
+			<string>\b(ABS*|AST,1|AST,2|BOVF|COMP|COMP*|COS*|CROSS|DBSU|DMOVE|DMOVE*|DTS|ITC|ITC*|ITCI|ITCQ|LOAD|LODON|NOLOD|SHIFTL|SHIFTR|SMOVE|SMOVE*|SQUARE|STZ|SWITCH|TEST|TMOVE|TRAD|TSLC|TSLT|TSLT*|TSRT|TSRT*|TSU|TTS|VMOVE|VMOVE*|VSLT|VSLT*|VSQ|VSRT|VSRT*|VTS)\b</string>
+			<key>name</key>
+			<string>keyword.control.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block II Interpreter Opcodes</string>
+			<key>match</key>
+			<string>\b(ABS|ABVAL|ACOS|ARCCOS|ARCSIN|ASIN|AXC,[12]|AXT,[12]|BDDV\**|BDSU\**|BHIZ|BMN|BOFCLR|BOF|BOFF|BOFINV|BOFSET|BON|BONCLR|BONINV|BONSET|BOV|BOVB|BPL|BVSU\**|BZE|CALL|CALRB|CCALL\**|CGOTO\**|CLEAR|CLR|CLRGO|COS|COSINE|DAD\**|DCOMP|DDV\**|DLOAD\**|DMP\**|DMPR\**|DOT\**|DSQ|DSU\**|EXIT|GOTO|INCR,[12]|INVERT|INVGO|ITA|LXA,[12]|LXC,[12]|MXV\**|NORM\**|PDDL\**|PDVL\**|PUSH|ROUND|RTB|RVQ|SET|SETGO|SETPD|SIGN\**|SIN|SINE|SL[1234]|SL[1234]R|SL\**|SLOAD\**|SLR\**|SQRT|SR[1234]|SR[1234]R|SR\**|SRR\**|SSP\**|STADR|STCALL|STODL\**|STORE|STOVL\**|STQ|SXA,[12]|TAD\**|TIX,[12]|TLOAD\**|UNIT\**|V/SC\**|VAD\**|VCOMP|VDEF|VLOAD\**|VPROJ\**|VSL|VSL[\*1-8]|VSQ|VSR|VSR[\*1-8]|VSU\**|VXM\**|VXSC\**|VXV\**|XAD,[12]|XCHX,[12]|XSU,[12])\b</string>
+			<key>name</key>
+			<string>keyword.control.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block I Opcodes</string>
+			<key>match</key>
+			<string>\b(OVIND|XAQ)\b</string>
+			<key>name</key>
+			<string>keyword.control.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block II Opcodes</string>
+			<key>match</key>
+			<string>\b(-CCS|AD|ADS|AUG|BZF|BZMF|CA|CAE|CAF|CCS|COM|CS|DAS|DCA|DCOM|DCS|DDOUBL|DIM|DOUBLE|DTCB|DTCF|DV|DXCH|EDRUPT|EXTEND|INCR|INDEX|INHINT|LXCH|MASK|MP|MSU|NDX|NOOP|OVSK|QXCH|RAND|READ|RELINT|RESUME|RETURN|ROR|RXOR|SQUARE|SU|TC|TCR|TCAA|TCF|TS|WAND|WOR|WRITE|XCH|XLQ|XXALQ|ZL|ZQ)\b</string>
+			<key>name</key>
+			<string>keyword.control.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block I Directives</string>
+			<key>match</key>
+			<string>\b(-CADR|XCADR)\b</string>
+			<key>name</key>
+			<string>keyword.other.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block II Directives</string>
+			<key>match</key>
+			<string>\b(=|=MINUS|=ECADR|-2CADR|-GENADR|2BCADR|2CADR|2DEC|2DEC*|2FCADR|2OCT|ADRES|BANK|BBCON|BBCON*|BLOCK|BNKSUM|CADR|CHECK=|COUNT|COUNT*|DEC|DEC*|EBANK=|ECADR|EQUALS|ERASE|FCADR|GENADR|MEMORY|MM|NV|OCT|OCTAL|REMADR|SBANK=|SETLOC|SUBRO|VN)\b</string>
+			<key>name</key>
+			<string>keyword.other.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block II Downlink Directives</string>
+			<key>match</key>
+			<string>\b(-1DNADR|-2DNADR|-3DNADR|-4DNADR|-5DNADR|-6DNADR|-DNCHAN|-DNPTR|1DNADR|2DNADR|3DNADR|4DNADR|5DNADR|6DNADR|DNCHAN|DNPTR)\b</string>
+			<key>name</key>
+			<string>keyword.other.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Constants</string>
+			<key>match</key>
+			<string>\b([0-9\-.EB]+D*)\b</string>
+			<key>name</key>
+			<string>constant.numeric.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block I Registers</string>
+			<key>match</key>
+			<string>\b(D|Z|N|SL|BI|EDH|CLHP|HP|LP|ZI|IN0|IN1|IN2|IN3|IN4|IN5|OUT0|OUT1|OUT2|OUT3|OUT4|RIP)\b</string>
+			<key>name</key>
+			<string>variable.language.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Block II Registers</string>
+			<key>match</key>
+			<string>\b(A|L|Q|EB|FB|Z|BB|ARUPT|LRUPT|QRUPT|ZRUPT|BBRUPT|BRUPT|CYR|SR|CYL|EDOP)\b</string>
+			<key>name</key>
+			<string>variable.language.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators</string>
+			<key>match</key>
+			<string>\b\+|\-|,\b</string>
+			<key>name</key>
+			<string>keyword.operator.ags_assembly</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
