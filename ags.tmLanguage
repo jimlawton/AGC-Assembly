@@ -15,13 +15,61 @@
 			<key>comment</key>
 			<string>Comments</string>
 			<key>match</key>
-			<false/>
+			<string>##.*</string>
 			<key>name</key>
-			<string>comment.ags</string>
+			<string>invalid.deprecated.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>#.*</string>
+			<key>name</key>
+			<string>comment.line.number-sign.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hacks</string>
+			<key>match</key>
+			<string>\bCHECKSUM.*$</string>
+			<key>name</key>
+			<string>invalid.illegal.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Constants</string>
+			<key>match</key>
+			<string>\b([0-9\-.EB]+)</string>
+			<key>name</key>
+			<string>constant.numeric.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Directives</string>
+			<key>match</key>
+			<string>\b(ORG|EQU|BSS|BES|SYN|DEFINE|DEC|OCT|END)\b</string>
+			<key>name</key>
+			<string>keyword.other.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Instructions</string>
+			<key>match</key>
+			<string>\b(ABS|ADD|ADZ|ALS|AXT|CLA|CLZ|COM|DLY|DVP|INP|LDQ|LLS|LRS|MPR|MPY|MPZ|OUT|STO|STQ|SUB|SUZ|TIX|TMI|TOV|TRA|TSQ)\b</string>
+			<key>name</key>
+			<string>keyword.control.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Registers</string>
+			<key>match</key>
+			<string>\b(A|Q|INDEX)\b</string>
+			<key>name</key>
+			<string>variable.language.ags_assembly</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.ags</string>
+	<string>source.ags_assembly</string>
 	<key>uuid</key>
 	<string>ebcb89b7-fbf9-467d-90ec-7ab247800e0c</string>
 </dict>
