@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>Constants</string>
 			<key>match</key>
-			<string>\b([0-9\-.EB]+)</string>
+			<string>\b([0-9\-.EB]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.ags_assembly</string>
 		</dict>
@@ -66,6 +66,14 @@
 			<string>\b(A|Q|INDEX)\b</string>
 			<key>name</key>
 			<string>variable.language.ags_assembly</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators</string>
+			<key>match</key>
+			<string>\+|\-|,</string>
+			<key>name</key>
+			<string>keyword.operator.ags_assembly</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

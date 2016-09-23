@@ -20,7 +20,7 @@ patterns:
 - comment: Constants
   name: constant.numeric.ags_assembly
   #match: \b[0-9\-\.]+([EB][0-9\-\+]+)*\b
-  match: \b([0-9\-.EB]+)
+  match: \b([0-9\-.EB]+)\b
 
 - comment: Directives
   name: keyword.other.ags_assembly
@@ -34,6 +34,6 @@ patterns:
   name: variable.language.ags_assembly
   match: \b(A|Q|INDEX)\b
 
-#- comment: Operators
-#  name: keyword.operator.ags_assembly
-#  match: \+|\-|,
+- comment: Operators
+  name: keyword.operator.ags_assembly
+  match: \+|\-|,
