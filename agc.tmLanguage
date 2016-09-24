@@ -110,7 +110,7 @@
 			<key>comment</key>
 			<string>Label</string>
 			<key>match</key>
-			<string>^( *[0-9A-Z+-/\*\=\(\)\?\'\.\&amp;\;]+)\b</string>
+			<string>^( ?[0-9A-Z+-/\*\=\(\)\?\'\.\&amp;\;]+)\b</string>
 			<key>name</key>
 			<string>variable.parameter.agc_assembly</string>
 		</dict>

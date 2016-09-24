@@ -57,7 +57,7 @@ patterns:
 
 - comment: Label
   name: variable.parameter.agc_assembly
-  match: ^( *[0-9A-Z+-/\*\=\(\)\?\'\.\&\;]+)\b
+  match: ^( ?[0-9A-Z+-/\*\=\(\)\?\'\.\&\;]+)\b
 
 - comment: Operators
   name: keyword.operator.ags_assembly
