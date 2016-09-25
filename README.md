@@ -23,7 +23,7 @@ Locate the Sublime Text [packages directory][4] on your machine and use Git to
 clone the repostory from Github into that directory:
 ```
 $ cd </sublime/packages/directory>
-$ git clone https://github.com/jimlawton/sublime-agc.git 
+$ git clone https://github.com/jimlawton/AGC-Assembly
 ```
 
 ## Contributing
