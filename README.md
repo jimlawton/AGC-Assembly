@@ -1,5 +1,6 @@
 # AGC Assembly
-[Sublime Text](http://www.sublimetext.com) syntax-highlighting for [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
+[Sublime Text](http://www.sublimetext.com) syntax-highlighting for 
+[Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
 This syntax supports the following filetypes:
  - `agc` - AGC (Command Module and Lunar Module) assembly language source.
@@ -29,8 +30,7 @@ $ git clone https://github.com/jimlawton/sublime-agc.git
 
 Pull requests are welcome. Please do *not* edit the `.tmLanguage` files
 directly. Instead, edit the `.YAML-tmLanguage` files and build the
-`.tmLanguage` file from it using
-[AAAPackageDev](https://github.com/SublimeText/AAAPackageDev).
+`.tmLanguage` file from it using [PackageDev](https://github.com/SublimeText/PackageDev).
 
 
 [1]:http://www.ibiblio.org/apollo/
