@@ -1,7 +1,11 @@
-// These settings override both User and Default settings for the binsource syntax
+// These settings override both User and Default settings for the agc syntax
 {
-    // The number of spaces a tab is considered equal to
     "tab_size": 8,
-    // Set to true to insert spaces when tab is pressed
-    "translate_tabs_to_spaces": false
+    "translate_tabs_to_spaces": false,
+    "use_tab_stops": true,
+    "detect_indentation": false,
+    "auto_indent": true,
+    "smart_indent": false,
+    "indent_to_bracket": false,
+    "trim_automatic_white_space": false
 }
