@@ -17,6 +17,10 @@ patterns:
   name: invalid.illegal.ags_assembly
   match: \bCHECKSUM.*$
 
+- comment: Label
+  name: variable.parameter.agc_assembly
+  match: (^ ?[0-9A-Z\+\-\/\*\=\(\)\?\'\.\&\;]+\b)
+
 - comment: Constants
   name: constant.numeric.ags_assembly
   #match: \b[0-9\-\.]+([EB][0-9\-\+]+)*\b
