@@ -1,0 +1,12 @@
+// These settings override both User and Default settings for the mitigus syntax
+{
+    "auto_indent": true,
+    "detect_indentation": false,
+    "indent_to_bracket": false,
+    "rulers": [1, 8, 16, 80],
+    "smart_indent": false,
+    "tab_completion": false,
+    "tab_size": 8,
+    "translate_tabs_to_spaces": true,
+    "use_tab_stops": true
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>mitigus</string>
+	</array>
+	<key>name</key>
+	<string>MIT/IL Argus Assembly for Burroughs 1800</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Annotation comments</string>
+			<key>match</key>
+			<string>##.*</string>
+			<key>name</key>
+			<string>invalid.deprecated.mitigus</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Log Section cards.</string>
+			<key>match</key>
+			<string>^L .*</string>
+			<key>name</key>
+			<string>comment.line.number-sign.mitigus</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Paragraph cards.</string>
+			<key>match</key>
+			<string>^P[0-9]+.*</string>
+			<key>name</key>
+			<string>comment.line.number-sign.mitigus</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Remarks cards (comments).</string>
+			<key>match</key>
+			<string>^R[0-9]+.*</string>
+			<key>name</key>
+			<string>comment.line.number-sign.mitigus</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.mitigus</string>
+	<key>uuid</key>
+	<string>db04aa4b-b4b2-4e42-b9e6-3bb6ca2ecf6f</string>
+</dict>
+</plist>
