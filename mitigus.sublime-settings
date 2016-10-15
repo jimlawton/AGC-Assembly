@@ -3,7 +3,7 @@
     "auto_indent": true,
     "detect_indentation": false,
     "indent_to_bracket": false,
-    "rulers": [1, 8, 16, 80],
+    "rulers": [1, 8, 19, 32, 46, 60, 75, 80, 120],
     "smart_indent": false,
     "tab_completion": false,
     "tab_size": 8,
