@@ -1,6 +1,6 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
-name: MIT/IL Argus Assembly for Burroughs 1800
+name: MIT/IL Argus Assembly for Honeywell H-800/H-1800
 scopeName: source.mitigus
 fileTypes: [mitigus]
 uuid: db04aa4b-b4b2-4e42-b9e6-3bb6ca2ecf6f
