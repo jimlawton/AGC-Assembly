@@ -7,14 +7,22 @@
 		<string>mitigus</string>
 	</array>
 	<key>name</key>
-	<string>MIT/IL Argus Assembly for Burroughs 1800</string>
+	<string>MIT/IL Argus Assembly for Honeywell H-800/H-1800</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>comment</key>
 			<string>Annotation comments</string>
 			<key>match</key>
-			<string>##.*</string>
+			<string>^#.*</string>
+			<key>name</key>
+			<string>invalid.deprecated.mitigus</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Annotation comments</string>
+			<key>match</key>
+			<string>^##.*</string>
 			<key>name</key>
 			<string>invalid.deprecated.mitigus</string>
 		</dict>
@@ -41,6 +49,14 @@
 			<string>^R[0-9]+.*</string>
 			<key>name</key>
 			<string>comment.line.number-sign.mitigus</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Source cards.</string>
+			<key>match</key>
+			<string>^ [0-9]+ </string>
+			<key>name</key>
+			<string>constant.numeric.mitigus</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
