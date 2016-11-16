@@ -4,10 +4,11 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
+		<string>argus</string>
 		<string>mitigus</string>
 	</array>
 	<key>name</key>
-	<string>MIT/IL Argus Assembly for Honeywell H-800/H-1800</string>
+	<string>ARGUS H800 Assembly Language</string>
 	<key>patterns</key>
 	<array>
 		<dict>
