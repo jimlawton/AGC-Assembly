@@ -15,14 +15,14 @@ patterns:
 - comment: Log Section cards.
   name: comment.line.number-sign.mitigus
   match: "^L .*"
-- comment: Paragraph cards.
-  name: comment.line.number-sign.mitigus
-  match: "^P[0-9]+.*"
-- comment: Remarks cards (comments).
-  name: comment.line.number-sign.mitigus
-  match: "^R[0-9]+.*"
+#- comment: Paragraph cards.
+#  name: comment.line.number-sign.mitigus
+#  match: "^P[0-9]+.*"
+#- comment: Remarks cards (comments).
+#  name: comment.line.number-sign.mitigus
+#  match: "^R[0-9]+.*"
 - comment: Source cards.
   name: constant.numeric.mitigus
-  match: "^ [0-9]+ "
+  match: "^ [0-9]+ *[*]?"
 
 ...

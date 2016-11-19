@@ -37,25 +37,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Paragraph cards.</string>
-			<key>match</key>
-			<string>^P[0-9]+.*</string>
-			<key>name</key>
-			<string>comment.line.number-sign.mitigus</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Remarks cards (comments).</string>
-			<key>match</key>
-			<string>^R[0-9]+.*</string>
-			<key>name</key>
-			<string>comment.line.number-sign.mitigus</string>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>Source cards.</string>
 			<key>match</key>
-			<string>^ [0-9]+ </string>
+			<string>^ [0-9]+ *[*]?</string>
 			<key>name</key>
 			<string>constant.numeric.mitigus</string>
 		</dict>
